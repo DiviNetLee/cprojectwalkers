@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120148906-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-120148906-1');
+        </script>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Walker's HVAC &amp; General Contracting</title>
+		<link href='https://fonts.googleapis.com/css?family=Taprom' rel='stylesheet'>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<link rel="stylesheet" href="../css/style.css">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<link rel="apple-touch-icon" sizes="180x180" href="../favicon_package_v0.16/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="../favicon_package_v0.16/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="../favicon_package_v0.16/favicon-16x16.png">
+		<link rel="manifest" href="../favicon_package_v0.16/site.webmanifest">
+		<link rel="mask-icon" href="../favicon_package_v0.16/safari-pinned-tab.svg" color="#00b3e6">
+		<link href='https://fonts.googleapis.com/css?family=Advent Pro' rel='stylesheet'>
+		<meta name="msapplication-TileColor" content="#f0f0f0">
+		<meta name="theme-color" content="#ffffff">
+	</head>
+	<body class="fsBody" id="fsLocal">
+		<header id="moveit">
+		    <nav id="ham1" class="navbar navbar-expand-lg">
+                <button id="ham2" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span id="ham3" class="navbar-toggler-icon" style="color:#ffffff; font-size: 32px;">&#9776;</span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/services">Services</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="../pages/contact">Contact<span class="sr-only">(current)</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav><br><br><br><br>
+			<div id="headercontain" class="row">
+				<div id="logo" class="col-lg-4">
+					<img src="../images/site_images/walkerslogo.png" alt="Red and Blue House of Arrows">
+				</div>
+				<div id="nameandslog" class="col-lg-8">
+					<h1>Walker's HVAC &amp; General Contracting</h1>
+					<h3>"Keeping you in the Comfort Zone!"</h3>
+				</div>
+			</div>
+			<br><br><br>
+		</header>
+        <br><br>
+        <form method="post" name="contact_form" action="contact-form-handler.php">
+           <h2>Get In Touch</h2><br>
+            <input placeholder="NAME" type="text" name="name" id="name" required><br><br>
+            <input placeholder="EMAIL" type="text" name="email" id="email"><br><br>
+            <input placeholder="PHONE" type="text" name="phone" id="phone"><br><br>
+            <textarea placeholder="MESSAGE" name="message" id="message"></textarea><br><br>
+            <input type="submit" value="Submit" id="submit"><br><br>
+        </form>  
+        <br><br><br>
+		<footer>
+            <div class="row">
+                <div class="col-lg-3" id="call">
+                    <ul>
+                        <li><small>CALL US</small></li>
+                        <li><strong>434.568.7188</strong></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3" id="ema">
+                    <ul>
+                        <li><small>EMAIL US</small></li>
+                        <li><strong>walkerharold72@yahoo.com</strong></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3" id="cont">
+                    <ul>
+                        <li><small>CONTACT US</small></li>
+                        <li><strong><a href="../pages/contact">Tells us what you need!</a></strong></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3" id="conn">
+                    <ul>
+                        <li><small>CONNECT WITH US</small></li>
+                        <li><strong><a href="https://www.facebook.com/walkershvac"><i class="fa fa-facebook-official"></i></a></strong></li>
+                    </ul>
+                </div>
+            </div>
+             <div class="row" id="notes">
+                <div class="col-lg-3">
+                    
+                </div>
+                <div class="col-lg-3" id="copy">
+                   <small id="u">Copyright 2018 &copy; Walker's HVAC</small>
+                </div>
+                <div class="col-lg-3" id="credit">
+                    <small id="me"><a href="https://www.divinetsolutions.com">Designed by &bull; DiviNet Solutions</a></small>
+                </div>
+                <div class="col-lg-3">
+                    
+                </div>
+            </div>
+		</footer>
+    <script language="JavaScript">
+        var frmvalidator  = new Validator("contactform");
+        frmvalidator.addValidation("name","req","Please provide your name");
+        frmvalidator.addValidation("email","req","Please provide your email");
+        frmvalidator.addValidation("email","email","Please enter a valid email address");
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+	<script src="../scripts/script.js" type="text/javascript" charset="utf-8" async defer></script>
+	<script src="../scripts/gen_validatorv31.js" type="text/javascript" charset="utf-8" async defer></script>
+	</body>
+</html>
